@@ -4,7 +4,7 @@
       "frontend": {
         "entrypoint": "src/index.html"
       },
-      "source": ["src"],
+      "source": ["portfolio"],
       "type": "assets"
     }
   },
