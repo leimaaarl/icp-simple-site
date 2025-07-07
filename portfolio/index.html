@@ -1,14 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-DFvYZbOh.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C5pr2IXr.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leimarl | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+  <div class="section hero bg-1 fade-in">
+    <div class="content slide-up">
+      <h1>Hello, I'm <span id="typed"></span></h1>
+      <h4>An <span class="color-change">ambitious</span> full stack developer with a strong interest in web
+        applications.</h4>
+    </div>
+  </div>
+
+  <section class="slider-section glass fade-in">
+    <div class="slider-container slide-up">
+      <div class="slider-scroller">
+        <ul class="slider-track">
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/html5.svg" alt="HTML5" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/javascript.svg" alt="JavaScript" width="60" height="60" class="slider-img"
+                loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/react.svg" alt="React" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/php.svg" alt="PHP" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/mysql.svg" alt="MySQL" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/sqlite.svg" alt="SQLite" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/nodedotjs.svg" alt="NodeJS" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <!-- Duplicate for seamless loop -->
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/html5.svg" alt="HTML5" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/javascript.svg" alt="JavaScript" width="60" height="60" class="slider-img"
+                loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/react.svg" alt="React" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/php.svg" alt="PHP" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/mysql.svg" alt="MySQL" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/sqlite.svg" alt="SQLite" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-img-wrap">
+              <img src="./images/nodedotjs.svg" alt="NodeJS" width="60" height="60" class="slider-img" loading="lazy" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section aboutme bg-2 fade-in">
+    <div class="aboutme-card-new slide-up">
+      <div class="aboutme-card-header">
+        <div>
+          <h2 class="aboutme-title">Hello, I'm Leimarl</h2>
+          <p class="aboutme-subtitle">Aspiring Full Stack Developer</p>
+        </div>
+      </div>
+      <div class="aboutme-description" id="aboutme-tab-content">
+        <!-- Tab content will be injected here -->
+      </div>
+      <nav class="tab-nav">
+        <button class="tab-btn active" onclick="showSection('intro')">
+          <span>Introduction</span>
+        </button>
+        <button class="tab-btn" onclick="showSection('skills')">
+          <span>Skills</span>
+        </button>
+        <button class="tab-btn" onclick="showSection('experiences')">
+          <span>Experience</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <footer class="section bg-3 fade-in">
+    <div class="content slide-up">
+      <div id="footer" class="footer">
+        <div class="gradient-text">
+          <h1>GetInTouch(); </h1>
+        </div>
+        <div class="footer-3">
+          <div class="social-container">
+            <div class="social-icon">
+              <a href="https://github.com/leimaaarl">
+                <img src="./images/github.svg" alt="Email Me" width="50" height="50" />
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="mailto:luaresleimarl@gmail.com">
+                <img src="./images/gmail.svg" alt="Email Me" width="50" height="50" />
+              </a>
+            </div>
+          </div>
+          <div class="end">
+            <p>© <span class="year"></span> Copyright Leimarl Luares. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
